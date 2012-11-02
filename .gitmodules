@@ -7,3 +7,6 @@
 [submodule "vim/vim.symlink/bundle/vim-wombat.git"]
 	path = vim/vim.symlink/bundle/vim-wombat.git
 	url = https://github.com/cschlueter/vim-wombat
+[submodule "vim/vim.symlink/bundle/command-t.git"]
+	path = vim/vim.symlink/bundle/command-t.git
+	url = git://git.wincent.com/command-t.git

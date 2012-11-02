@@ -22,6 +22,10 @@ Includes:
 
 You must edit `gitconfig` file in order to set your personal commit data.
 
+## Dependencies
+
+* Vim: with ruby and python support (check your `vim --version`)
+
 
 ## Additional notes
 
