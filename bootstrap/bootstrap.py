@@ -1,4 +1,4 @@
-# This file is part of alvarovmz's dotdfiles
+# This file is part of alvarovmz's dotfiles
 # Alvaro Vila <alvarovmz@gmail.com>
 
 import os

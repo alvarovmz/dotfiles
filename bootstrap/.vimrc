@@ -1,1 +1,0 @@
-/Users/alvaro/projects/dotfiles/vim/vimrc.symlink
