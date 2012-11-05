@@ -1,11 +1,12 @@
 # alvarovmz's dotfiles
 
-Includes:
+## Contents
 
 * zsh
-  * oh-my-zsh
+  * [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
 * Vim
-  * python-mode
+  * [python-mode](https://github.com/klen/python-mode)
+  * [vim-surround](https://github.com/tpope/vim-surround)
   * Color scheme
 * OSX
   * OS config
@@ -26,7 +27,12 @@ You must edit `gitconfig` file in order to set your personal commit data.
 
 * Vim: with ruby and python support (check your `vim --version`)
 
-
 ## Additional notes
 
 Feel free to fork, send pull request, open issues...
+
+## TODO
+
+* Bootstrap
+  * Uninstall
+  * Backup current config

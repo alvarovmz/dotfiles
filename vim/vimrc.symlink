@@ -11,6 +11,9 @@ map ,ss :setlocal spell spelllang=es_ES<CR>
 " ,se -> Spellcheck in English
 map ,se :setlocal spell spelllang=en_us<CR>
 
+" kj -> <Esc>
+imap kj <Esc>
+
 " ----------------------------------------------------------------------------
 " Plugins
 " ----------------------------------------------------------------------------
