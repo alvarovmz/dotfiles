@@ -12,6 +12,11 @@
   * OS config
 * Git
   * Config and aliases
+* Python
+  * Colors
+  * History
+  * Django project modules autoload
+  * External Editor
 
 ## Install
 
