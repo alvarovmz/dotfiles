@@ -9,33 +9,33 @@ import fnmatch
 def link(source, dest):
     try:
         os.symlink(source, dest)
-        print "Created: ", dest
+        print 'Created: ', dest
     except OSError:
-        print 'Detected existing: "%s"' % dest
+        print 'Detected existing: %s' % dest
 
 
 def install(option, opt, value, parser):
-    print "Installing..."
+    print 'Installing...'
 
     HOME = os.environ['HOME']
-    CURRENT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+    CURRENT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 
     for root, dirnames, filenames in os.walk(CURRENT):
-        if ".git" in dirnames:
-            dirnames.remove(".git")
+        if '.git' in dirnames:
+            dirnames.remove('.git')
         for filename in fnmatch.filter(filenames + dirnames, '*.symlink'):
             link(os.path.join(root, filename),
-                 os.path.join(HOME, "." + filename.split(".")[0]))
+                 os.path.join(HOME, '.' + os.path.splitext(filename)[0]))
 
 
 def uninstall(option, opt, value, parser):
-    print "Uninstalling..."
+    print 'Uninstalling...'
 
 
 parser = OptionParser()
-parser.add_option("-i", "--install", help="Install environment",
-                  action="callback", callback=install)
-parser.add_option("-u", "--uninstall", help="Unnstall environment",
-                  action="callback", callback=uninstall)
+parser.add_option('-i', '--install', help='Install environment',
+                  action='callback', callback=install)
+parser.add_option('-u', '--uninstall', help='Unnstall environment',
+                  action='callback', callback=uninstall)
 
 (options, arguments) = parser.parse_args()
