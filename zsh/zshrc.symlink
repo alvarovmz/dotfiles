@@ -38,3 +38,4 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 export WORKON_HOME=~/.virtualenv/
+export PYTHONSTARTUP=~/.pythonrc.py
