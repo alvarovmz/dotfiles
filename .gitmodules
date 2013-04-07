@@ -13,3 +13,6 @@
 [submodule "vim/vim.symlink/bundle/vim-surround.git"]
 	path = vim/vim.symlink/bundle/vim-surround.git
 	url = git://github.com/tpope/vim-surround.git
+[submodule "vim/vim.symlink/bundle/jshint.vim.git"]
+	path = vim/vim.symlink/bundle/jshint.vim.git
+	url = https://github.com/walm/jshint.vim.git
