@@ -1,18 +1,6 @@
 [submodule "zsh/oh-my-zsh.symlink"]
-	path = zsh/oh-my-zsh.symlink
-	url = git://github.com/robbyrussell/oh-my-zsh.git
-[submodule "vim/vim.symlink/bundle/python-mode.git"]
-	path = vim/vim.symlink/bundle/python-mode.git
-	url = git://github.com/klen/python-mode.git
-[submodule "vim/vim.symlink/bundle/vim-wombat.git"]
-	path = vim/vim.symlink/bundle/vim-wombat.git
-	url = https://github.com/cschlueter/vim-wombat
-[submodule "vim/vim.symlink/bundle/command-t.git"]
-	path = vim/vim.symlink/bundle/command-t.git
-	url = git://git.wincent.com/command-t.git
-[submodule "vim/vim.symlink/bundle/vim-surround.git"]
-	path = vim/vim.symlink/bundle/vim-surround.git
-	url = git://github.com/tpope/vim-surround.git
-[submodule "vim/vim.symlink/bundle/jshint.vim.git"]
-	path = vim/vim.symlink/bundle/jshint.vim.git
-	url = https://github.com/walm/jshint.vim.git
+    path = zsh/oh-my-zsh.symlink
+    url = git://github.com/robbyrussell/oh-my-zsh.git
+[submodule "vim/vim.symlink/bundle/Vundle.vim"]
+    path = vim/vim.symlink/bundle/Vundle.vim
+    url = git@github.com:gmarik/Vundle.vim.git

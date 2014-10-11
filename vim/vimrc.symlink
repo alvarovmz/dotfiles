@@ -1,6 +1,30 @@
 " ---------------------------------------------------------------------------
+"  General configuration
+" ---------------------------------------------------------------------------
+set nocompatible                " vi != vim
+filetype off
+
+" ---------------------------------------------------------------------------
+"  Vundle
+" ---------------------------------------------------------------------------
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" let Vundle manage Vundle, required
+Plugin 'gmarik/Vundle.vim'
+Plugin 'wincent/command-t'
+Plugin 'klen/python-mode'
+Plugin 'vim-scripts/Wombat'
+Plugin 'altercation/vim-colors-solarized'
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+
+" ---------------------------------------------------------------------------
 "  Shorcuts
 " ---------------------------------------------------------------------------
+let mapleader=","               " Lead with ,
 
 " ,w -> Strip whitespaces
 map ,w :call StripWhitespace ()<CR>
@@ -17,23 +41,10 @@ imap kj <Esc>
 " ----------------------------------------------------------------------------
 " Plugins
 " ----------------------------------------------------------------------------
-
-" Pathogen (plugins under ~/.vim/bundle)
-call pathogen#infect()
-call pathogen#helptags()
-
 " Python-Mode (python improvements)
 let g:pymode_run_key = '<leader>r'  " Key for run python code
 let g:pymode_folding = 0            " Disable python folding
 
-
-" ---------------------------------------------------------------------------
-"  General configuration
-" ---------------------------------------------------------------------------
-
-" General
-set nocompatible                " vi != vim
-let mapleader=","               " Lead with ,
 
 " Format settings
 set nowrap                      " No wrap lines
@@ -101,8 +112,9 @@ filetype indent plugin on
 
 " Syntax highlighting and color scheme (solarized)
 syntax enable
-set t_Co=256
-colorscheme wombat256
+let g:solarized_style="dark"
+let g:solarized_visibility = "high"
+colorscheme solarized
 
 
 " ---------------------------------------------------------------------------
